@@ -81,6 +81,9 @@ public class App {
         ArrayList<Mendia> arabaMendiak = new ArrayList<>();
         ArrayList<Mendia> bizkaiaMendiak = new ArrayList<>();
         ArrayList<Mendia> gipuzkoaMendiak = new ArrayList<>();
+        ArrayList<Mendia> nafarroaMendiak = new ArrayList<>();
+        ArrayList<Mendia> lapurdiMendiak = new ArrayList<>();
+        ArrayList<Mendia> zuberoaMendiak = new ArrayList<>();
 
         for (Mendia m : mendiak) {
             switch (m.probintzia) {
@@ -93,6 +96,15 @@ public class App {
                 case "Gipuzkoa":
                     gipuzkoaMendiak.add(m);
                     break;
+                case "Nafarroa":
+                    nafarroaMendiak.add(m);
+                    break;
+                case "Lapurdi":
+                    lapurdiMendiak.add(m);
+                    break;
+                case "Zuberoa":
+                    zuberoaMendiak.add(m);
+                    break;
 
             }
         }
@@ -100,6 +112,9 @@ public class App {
         mendiakGorde("Araba", arabaMendiak);
         mendiakGorde("Bizkaia", bizkaiaMendiak);
         mendiakGorde("Gipuzkoa", gipuzkoaMendiak);
+        mendiakGorde("Nafarroa", gipuzkoaMendiak);
+        mendiakGorde("Lapurdi", gipuzkoaMendiak);
+        mendiakGorde("Zuberoa", gipuzkoaMendiak);
 
         System.out.println("Mendien fitxategiak gorde dira.");
     }
